@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shulga E.V.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/animate.css" type="text/css" >
+	<!--сборочный файл -->
+	<link rel="stylesheet" href="../css/styles.css" type="text/css" >
+	<link rel="stylesheet" href="bundle.min.css" type="text/css">	
+	
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   	<![endif]-->	
+   	<script type="text/javascript" src="../jquery/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a.topLink").click(function() {
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 500
+				});
+				return false;
+			});
+		});
+	</script> 
+	<style>
+	/* ----------- Кнопка "вверх" --------- */
+	#toTop {
+		width: 135px;
+		border: 1px solid #ccc;
+		background: rgba(0,0,0,0.5);
+		text-align: center;
+		padding: 0.5em 15px;
+		position: fixed;
+		bottom: 5em;
+		right: 3%;
+		cursor: pointer;
+		display: none;
+		color: #fff;
+		font-size: 1em;
+		clear:both
+	}	
+
+	</style>
+	<!-- ************************************* Прокрутка копки "Вверх"  ********************** -->
+	<script type="text/javascript">
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() != 0) {
+					$('#toTop').fadeIn();
+				} else {
+					$('#toTop').fadeOut();
+				}
+			});
+			$('#toTop').click(function() {
+				$('body,html').animate({scrollTop:0},800);
+			});
+		});
+	</script>  		
+
+</head>
+<body>
+<header>
+	<section class="header-info">
+		<div class="header-info__left-info header-info__left-info_szw header-info__left-info_pdg">
+		<div class="wrap-for-image wrap-for-image__img_szw">
+				<img src="../img/header-info/egor.jpg" alt="" class="header-info__left-info_border">
+			</div>
+		</div>
+		<div class="header-info__right-info header-info__right-info_szw header-info__right_position">			
+			<ul class="header-info__navigation header-info__navigation_geometry">
+				<li><a href="#skills" class="topLink">Навыки</a></li>
+				<li><a href="#portfolio" class="topLink">Портфолио</a></li>
+				<li><a href="#social" class="topLink">Контакты</a></li>
+			</ul>			
+			<div class="header-info__text header-info__text_txt-options header-info__text_position header-info__text_geometry  header-info__text_color">Занимаюсь версткой HTML-страниц. Опыт работы в этой сфере у меня не большой (это пока больше хобби). Интересует любая возможность получить опыт в данной сфере. Готов удаленно выполнять за невысокую плату различного рода исправления на сайтах, а также готов выполнить работу по верстке с нуля (например с PSD-шаблона). Могу выполнить ряд работ напрямую не связанных с версткой, например установка счетчиков Яндекс.Метрики. Есть опыт работы с SVG-изображениями в части реализации интерактивного взаимодействия с такими форматами на JavaScript.</div>
+		</div>
+		<div class="wave header-info__wave"></div>	
+	</section>
+</header>	
+
+<main>
+	<section class="skills skills_options" id="skills">
+		<div class=" wow swing skills__header skills__header_options" data-wow-duration="2s" data-wow-offset="150" >: Мои навыки :</div>
+
+		<div class="wow slideInLeftcustom skills__skill-name-1 skills__skill-name_options skills__skill-name-1_color" data-wow-offset="150" data-wow-duration="2s"><p style="text-align:center">верстка простых сайтов, лэндингов, используя HTML5, CSS3, JQuery, JavaScript;</p></div>
+		<div class="wow slideInRightcustom skills__skill-name-2 skills__skill-name_options skills__skill-name-2_color"  data-wow-duration="2s"><p style="text-align:center">есть небольшой опыт создания и правка страниц на CMS Joomla 3;</p></div>
+		<div class="wow slideInLeftcustom skills__skill-name-3 skills__skill-name_options skills__skill-name-3_color skills__skill-name_slide-in-left" data-wow-offset="150"  data-wow-duration="2s"><p style="text-align:center">могу внести исправления в небольшие скрипты на языке JavaScript/JQuery;</p></div>		
+		<div class="wow slideInRightcustom skills__skill-name-4 skills__skill-name_options skills__skill-name-4_color skills__skill-name_slide-in-right"  data-wow-duration="2s"><p>есть опыт копирования лэндингов (ниже пример про рекламу часов DIESEL BRAVE - оригинал взят с alllanding.ru);</p></div>
+		<div class="wow slideInLeftcustom skills__skill-name-5 skills__skill-name_options skills__skill-name-5_color skills__skill-name_slide-in-left" data-wow-offset="30" data-wow-duration="2s"><p>создание адаптивных страниц с применением фрэймворка Bootstrap 3</p></div>
+
+	</section>
+	<div class="wave skills__wave"></div>
+	<sections class="portfolio" id="portfolio">
+		<div class="wow bounce portfolio__header portfolio__header_options" data-wow-offset="50">: Мое портфолио :</div>
+		<div class="portfolio__list-works">
+			<a href="http://www.shulga-art.ru/index.php"><img src="../img/portfolio/1-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50"></a>
+			<a href="http://www.shulga-art.ru/maria/"><img src="../img/portfolio/2-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50" data-wow-delay="0.5s"></a>
+			<a href="http://www.shulga-art.ru/galina_sh/"><img src="../img/portfolio/3mob-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50" data-wow-delay="1s"></a>
+		</div>
+	</sections>	
+	<sections class="portfolio-2">
+		<div class="portfolio__list-works-2 portfolio__list-works-2_options">
+			<a href="http://www.shulga-art.ru/tany/"><img src="../img/portfolio/4-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50" data-wow-delay="1.5s"></a>
+			<a href="http://shulga-art.ru/darja/"><img src="../img/portfolio/5-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50" data-wow-delay="2s"></a>
+			<a href="http://www.shulga-art.ru/lp-diesel/"><img src="../img/portfolio/6-example.png" alt="" class="wow fadeInUp frame-pic" data-wow-offset="50" data-wow-delay="2.5s"></a>			
+		</div>
+	</sections> 
+	<div class="wave portfolio__wave"></div>
+</main>
+<footer  class="footer_options">
+	<div class="social" id="social">
+		<a class="social__vk" href="https://vk.com/id1226929?as=-1"></a>
+		<a class="social__skype" href="skype:egorss@mail.ru?chat"></a>
+		<a class="social__mail" href="egorss@mail.ru"></a>				
+	</div>
+	<div class="year">
+		<script type="text/javascript">
+			var date = new Date();
+			var text = "© Shulga " + date.getFullYear()+".";
+			document.write(text);
+		</script>
+	</div>
+</footer>
+<script src="../js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<div id="toTop" > ^ Наверх</div>
+</body>
+</html>
