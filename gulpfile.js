@@ -1,5 +1,7 @@
 //Тут используется Gulp 4.0.2
 //для запуска терминала нажмите alt+shift+ctrl+T
+//для запуска gulp C:\OSPanel\domains\egor-gulp-less-bem> gulp
+
 //gulp +
 //gulp-less +
 //gulp-sourcemaps +
